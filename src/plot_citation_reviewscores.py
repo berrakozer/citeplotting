@@ -42,9 +42,13 @@ for i in range(1,len(data)):
 #print(type(data[1][review_scores_index]))
 #print(len(review_scores),len(citations))
 
-plt.xlim(1,5)
-plt.ylim(0,145)
-plt.scatter(review_scores, citations)
+fig,ax = plt.subplots(figsize=(12,4))
+plt.scatter(citations, review_scores,s=3,c='red')
+plt.xlim(-1,145)
+plt.ylim(0.9,5.1)
+plt.xlabel('Citations')
+plt.ylabel('Review Scores')
+#plt.scatter(review_scores, citations)
 plt.show()
 
 
