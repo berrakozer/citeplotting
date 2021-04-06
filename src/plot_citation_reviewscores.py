@@ -55,7 +55,7 @@ figname = Path(INPUT_FILE_NAME).stem
 #print(type(figname))
 #sys.exit()
 #plt.savefig(INPUT_FILE_NAME.split('.')[0] + '.png', bbox_inches = 'tight')
-plt.savefig(figname + '.png', bbox_inches = 'tight')
+plt.savefig(figname + '_.png', bbox_inches = 'tight')
 plt.show()
 
 
