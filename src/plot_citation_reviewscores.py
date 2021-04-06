@@ -48,7 +48,14 @@ plt.xlim(-1,145)
 plt.ylim(0.9,5.1)
 plt.xlabel('Citations')
 plt.ylabel('Review Scores')
-#plt.scatter(review_scores, citations)
+#figname = INPUT_FILE_NAME.split('.')[0]
+#figname = INPUT_FILE_NAME.strip('.csv')
+#figname = str(Path(INPUT_FILE_NAME).stem)
+figname = Path(INPUT_FILE_NAME).stem
+#print(type(figname))
+#sys.exit()
+#plt.savefig(INPUT_FILE_NAME.split('.')[0] + '.png', bbox_inches = 'tight')
+plt.savefig(figname + '.png', bbox_inches = 'tight')
 plt.show()
 
 
